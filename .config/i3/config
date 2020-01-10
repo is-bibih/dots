@@ -209,8 +209,8 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id picom -b
-exec --no-startup-id bash ~/.config/polybar/bestbar_launch.sh
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id bash ~/.config/polybar/bestbar_launch.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
