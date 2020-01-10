@@ -1,6 +1,5 @@
 # atom
-.atom/*
-.config/Atom/*
+.config/Atom/
 
 # caprine
-.config/Caprine/*
+.config/Caprine/
