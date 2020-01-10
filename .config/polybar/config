@@ -279,6 +279,9 @@ format-discharging = <animation-discharging> <label-discharging>
 format-discharging-background = ${self.format-charging-background}
 label-discharging = "%percentage%% "
 
+format-full = "%{T3}%{T-} full "
+format-full-background = ${self.format-charging-background}
+
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
