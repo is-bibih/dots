@@ -1,0 +1,6 @@
+[Unit]
+Description=run lowbat every minute
+
+[Timer]
+OnCalendar=minutely
+Persistent=true
