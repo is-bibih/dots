@@ -4,3 +4,6 @@ Description=run lowbat every minute
 [Timer]
 OnCalendar=minutely
 Persistent=true
+
+[Install]
+WantedBy=default.target

@@ -1,5 +1,6 @@
 [Unit]
 Description=low battery warnings
+Wants=lowbat.timer
 
 [Service]
 ExecStart=/bin/bash %h/lowbat.sh
