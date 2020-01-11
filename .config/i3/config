@@ -10,7 +10,7 @@ bindsym $mod+u border none
 bindsym $mod+y border pixel 0
 bindsym $mod+n border normal
 
-font xft:URWGothic-Book 11
+font pango:Iosevka Bold 11
 
 floating_modifier $mod
 
@@ -155,6 +155,7 @@ for_window [class="Xfburn"] floating enable
 floating_minimum_size 75 x 50
 floating_maximum_size 1366 x 768
 
+# fix giant windows
 for_window [title="Open File"] resize set 750 520
 
 # switch to workspace with urgent window automatically
@@ -209,25 +210,28 @@ mode "resize" {
 }
 
 # Autostart applications
+exec_always --no-startup-id bash ~/.config/polybar/bestbar_launch.sh &
 exec_always --no-startup-id picom -b
-exec_always --no-startup-id bash ~/.config/polybar/bestbar_launch.sh
-exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
-exec --no-startup-id redshift-gtk
+exec --no-startup-id nm-applet &
+exec --no-startup-id blueman-applet &
+exec --no-startup-id redshift-gtk &
 exec --no-startup-id ulauncher &
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id xautolock -time 10 -locker i3lock-fancy -- maim
 exec --no-startup-id mpris-proxy
 
 
-# Theme colors
-client.focused #56737a #1e1e20 #56737a #56737a #56737a
-client.focused_inactive #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.unfocused #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.urgent #56737a #1e1e20 #56737a #2c5159 #2c5159
-client.placeholder #56737a #1e1e20 #56737a #2c5159 #2c5159
+# class                 border  bground text    indic   child_border
+client.focused          #4d488a #232428 #fff0f8 #4d488a #4d488a
+client.focused_inactive #4d488a #232428 #fff0f8 #4d488a #4d488a
+client.unfocused        #53516e #232428 #fff0f8 #53516e #53516e
+client.urgent           #ff0a7c #232428 #fff0f8 #ff0a7c #ff0a7c
+client.placeholder      #53516e #232428 #fff0f8 #53516e #53516e
 
-client.background #1e1e20
+client.background #ff66c6
+
+# window title alignment
+title_align center
 
 # Gaps
 gaps inner 10
