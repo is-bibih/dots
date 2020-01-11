@@ -71,6 +71,7 @@ ttf-twemoji-color
 ttf-unifont
 ulauncher
 urxvt-perls
+vimix-gtk-themes-git
 vlc
 xautolock
 xclip
