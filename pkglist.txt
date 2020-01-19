@@ -14,6 +14,7 @@ bluez
 bluez-utils
 caprine
 cmake
+dconf-editor
 desmume
 dunst
 fakeroot
@@ -34,6 +35,7 @@ i3lock-fancy-git
 i3status
 jupyter-notebook
 krita
+libreoffice-fresh
 lightdm
 lightdm-gtk-greeter
 linux
@@ -68,6 +70,7 @@ polybar-git
 pulseaudio-bluetooth
 pyenv
 python-pip
+qt5-styleplugins
 redshift
 rxvt-unicode
 siji-git
