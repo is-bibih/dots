@@ -5,7 +5,6 @@ apache
 atom
 autoconf
 automake
-awesome
 base
 binutils
 bison
@@ -33,6 +32,8 @@ i3blocks
 i3lock-color-git
 i3lock-fancy-git
 i3status
+inkscape
+inotify-tools
 jupyter-notebook
 krita
 libreoffice-fresh
@@ -58,6 +59,7 @@ networkmanager
 pacutils
 pamixer
 papirus-icon-theme
+papirus-libreoffice-theme
 patch
 php
 php-apache
@@ -80,6 +82,7 @@ texinfo
 transmission-gtk
 ttf-dejavu
 ttf-hack
+ttf-ms-fonts
 ttf-nerd-fonts-symbols
 ttf-twemoji-color
 ttf-unifont
