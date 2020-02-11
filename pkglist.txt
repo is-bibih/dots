@@ -13,6 +13,8 @@ bluez
 bluez-utils
 caprine
 cmake
+cups
+cups-pdf
 dconf-editor
 desmume
 dunst
@@ -20,11 +22,13 @@ fakeroot
 feh
 firefox
 flex
+foomatic-db-gutenprint-ppds
 gcc
 git
 gnome-keyring
 grive
 gucharmap
+gutenprint
 hardcode-fixer-git
 hardcode-tray-git
 i3-gaps
@@ -79,6 +83,7 @@ siji-git
 subversion
 sudo
 texinfo
+texlive-core
 transmission-gtk
 ttf-dejavu
 ttf-hack
@@ -88,6 +93,7 @@ ttf-twemoji-color
 ttf-unifont
 ulauncher
 urxvt-perls
+usbutils
 viewnior
 vimix-gtk-themes-git
 vlc
