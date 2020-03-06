@@ -192,7 +192,7 @@ label-mode-background = ${self.label-focused-background}
 
 [module/backlight]
 type = internal/backlight
-card = radeon_bl0
+card = intel_backlight
 
 format-background = ${colors.color3}
 
@@ -266,7 +266,7 @@ ramp-font = 3
 [module/battery]
 type = internal/battery
 battery = BAT1
-adapter = ACAD
+adapter = AC
 full-at = 100
 
 format-background = ${colors.color8}

@@ -16,3 +16,6 @@ alias grive='grive --id 556210294094-qm0jmqlhr5e6cp0m16dvoo2aoodh666a.apps.googl
 
 # add user base to python path
 export PYTHONPATH=$(python -c "import site, os; print(os.path.join(site.USER_BASE, 'lib', 'python', 'site-packages'))"):$PYTHONPATH
+
+# set qt theme
+export QT_QPA_PLATFORMTHEME=gtk2
