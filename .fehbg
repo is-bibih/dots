@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/vivi/Downloads/wall2.jpg' 
+feh --no-fehbg --bg-scale '/home/vivi/pictures/wall2.jpg'
