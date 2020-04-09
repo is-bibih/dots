@@ -13,7 +13,7 @@ next=""
 not_playing="uwu"
 
 # player to open if there is no media playing
-player="i3-msg 'workspace 8; exec pithos'"
+player="i3-msg 'workspace 8; exec vlc -ZL grive/vivi/musik2/'"
 
 if [ "$player_status" = "Playing" ]; then
   title_text="$(playerctl metadata --format "{{ lc(artist) }}  {{ lc(title) }}")"
