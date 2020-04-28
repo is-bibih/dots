@@ -36,6 +36,20 @@
 # Facility (string)
 #syslog-facility=user
 
+[bittorrent] # Bittorrent data access
+
+# Downloads (string)
+#bittorrent-download-path=
+
+# Add video files (boolean)
+#bittorrent-add-video-files=1
+
+# Add audio files (boolean)
+#bittorrent-add-audio-files=1
+
+# Add image files (boolean)
+#bittorrent-add-image-files=0
+
 [alsa] # ALSA audio output
 
 # Audio output device (string)
@@ -1235,7 +1249,7 @@
 #qt-system-tray=1
 
 # Show notification popup on track change (integer)
-qt-notification=0
+#qt-notification=1
 
 # Start VLC with only a systray icon (boolean)
 #qt-start-minimized=0
@@ -3547,7 +3561,7 @@ qt-privacy-ask=0
 #role=video
 
 # Audio filters (string)
-#audio-filter=
+audio-filter=normvol
 
 # Audio visualizations (string)
 #audio-visual=none
@@ -3952,7 +3966,7 @@ qt-privacy-ask=0
 #packetizer=
 
 # VoD server module (string)
-#vod-server=
+vod-server=any
 
 # Use a plugins cache (boolean)
 #plugins-cache=1
@@ -3970,7 +3984,7 @@ qt-privacy-ask=0
 #rt-offset=0
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
 #loop=0

@@ -3,6 +3,7 @@ acpilight
 alsa-utils
 apache
 atom
+audacity
 autoconf
 automake
 base
@@ -59,6 +60,7 @@ maim
 make
 mariadb
 matlab
+mayavi
 mpc
 mpd
 nano
@@ -83,7 +85,10 @@ playerctl
 polybar
 pulseaudio-bluetooth
 pyenv
+python-lxml
 python-pip
+python2-lxml
+python2-numpy
 qt5-styleplugins
 redshift
 rsync
@@ -92,7 +97,18 @@ siji-git
 subversion
 sudo
 texinfo
+texlive-bibtexextra
 texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 transmission-gtk
 ttf-dejavu
 ttf-hack
