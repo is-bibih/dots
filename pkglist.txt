@@ -70,6 +70,7 @@ nemo-fileroller
 network-manager-applet
 networkmanager
 noto-fonts
+openshot
 pacutils
 pamixer
 papirus-icon-theme
@@ -120,6 +121,7 @@ ulauncher
 urxvt-perls
 usbutils
 viewnior
+vim
 vlc
 vlc-bittorrent
 wpa_supplicant
