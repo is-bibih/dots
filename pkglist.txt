@@ -38,6 +38,7 @@ gstreamer0.10-base
 gstreamer0.10-base-plugins
 gucharmap
 gutenprint
+gvim
 hardcode-tray
 i3-gaps
 i3blocks
@@ -70,7 +71,6 @@ nemo-fileroller
 network-manager-applet
 networkmanager
 noto-fonts
-openshot
 pacutils
 pamixer
 papirus-icon-theme
@@ -121,7 +121,7 @@ ulauncher
 urxvt-perls
 usbutils
 viewnior
-vim
+vim-plug
 vlc
 vlc-bittorrent
 wpa_supplicant
