@@ -124,6 +124,7 @@ viewnior
 vim-plug
 vlc
 vlc-bittorrent
+vue-cli
 wpa_supplicant
 xautolock
 xclip
