@@ -1,14 +1,4 @@
 {
-    "322e18a4-ef00-4d0f-a827-2e3e569f4482": {
-        "id": "322e18a4-ef00-4d0f-a827-2e3e569f4482",
-        "name": "Google Search",
-        "keyword": "g",
-        "cmd": "https://google.com/search?q=%s",
-        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
-        "is_default_search": true,
-        "run_without_argument": false,
-        "added": 1577497123.2368355
-    },
     "7b41df20-dd48-4784-b018-065bc397188d": {
         "id": "7b41df20-dd48-4784-b018-065bc397188d",
         "name": "Stack Overflow",
@@ -28,5 +18,25 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1577497123.237201
+    },
+    "eddf939f-14f8-4cd4-a200-5c3b4fb1e380": {
+        "id": "eddf939f-14f8-4cd4-a200-5c3b4fb1e380",
+        "name": "Duck Duck Go",
+        "keyword": "ddg",
+        "cmd": "https://duckduckgo.com/?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1588617924.659492
+    },
+    "5786796e-bf2f-4e56-a53f-14d17fea601a": {
+        "id": "5786796e-bf2f-4e56-a53f-14d17fea601a",
+        "name": "run in terminal",
+        "keyword": "run",
+        "cmd": "#!/usr/bin/bash\nurxvt -e sh -c \"$1; bash\"",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1588618150.859783
     }
 }
