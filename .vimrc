@@ -36,8 +36,23 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
     let g:airline_theme='deus'
 
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
+" colors
 set background=dark    " Setting dark mode
 colorscheme deus
 let g:deus_termcolors=256
+
+" nerdtree when no files are specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" nerdtree when opening a directory
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+" nerdtree keybinging
+map <C-n> :NERDTreeToggle<CR>
+
+" close vim when only nerdtree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
