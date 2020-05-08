@@ -2,7 +2,6 @@ acpi
 acpilight
 alsa-utils
 apache
-atom
 audacity
 autoconf
 automake
@@ -68,6 +67,7 @@ nemo-fileroller
 network-manager-applet
 networkmanager
 noto-fonts
+pacman-contrib
 pacutils
 pamixer
 papirus-icon-theme
