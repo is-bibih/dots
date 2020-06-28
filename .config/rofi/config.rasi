@@ -1,0 +1,10 @@
+configuration {
+	modi: "window,drun,ssh,combi";
+	combi-modi: "drun";
+	show-icons: true;
+	icon-theme: "Papirus";
+	font: "Iosevka 10";
+	hide-scrollbar: true;
+	theme: "cute-theme";
+	lines: 5;
+}

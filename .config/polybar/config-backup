@@ -1,0 +1,308 @@
+
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+; *********************************************************
+; colors
+; *********************************************************
+
+[colors]
+
+; normal colors *******************************************
+
+fground = #fff0f8
+fground-alt = #ffc9e6
+bground = #89A864AC
+alert = #ff174e
+
+; shades **************************************************
+
+color1 = #161854
+color2 = #4d488a
+color3 = #6951BD
+color4 = #9757ff
+color5 = #8E5CB3
+color6 = #d27ae6
+color7 = #B367A9
+color8 = #ff66c6
+color9 = #ff8fbe
+color10 = #f07599
+
+; *********************************************************
+; bar
+; *********************************************************
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[bar/bestbar]
+width = 100%
+height = 20
+
+background = ${colors.bground}
+foreground = ${colors.fground}
+
+font-0 = iosevka nerd font:style=regular:size=8;3
+font-1 = iosevka nerd font:style=regular:size=13;2
+font-2 = siji:pixelsize=10;2
+font-3 = unifont:style=regular:size=8
+
+modules-left = i3 left1 mpris left2
+modules-center = xwindow
+modules-right = right1 backlight right2 pulseaudio right6 battery right7 date right8
+
+tray-position = right
+tray-background = ${colors.color10}
+
+cursor-click = pointer
+
+; *********************************************************
+; modules
+; *********************************************************
+
+; left ****************************************************
+
+[module/left1]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color2}
+content-foreground = ${colors.color1}
+
+[module/left2]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.bground}
+content-foreground = ${colors.color2}
+
+; right ***************************************************
+
+[module/right1]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.bground}
+content-foreground = ${colors.color3}
+
+[module/right2]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color3}
+content-foreground = ${colors.color4}
+
+[module/right3]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color4}
+content-foreground = ${colors.color5}
+
+[module/right4]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color5}
+content-foreground = ${colors.color6}
+
+[module/right5]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color6}
+content-foreground = ${colors.color7}
+
+[module/right6]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color7}
+content-foreground = ${colors.color8}
+
+[module/right7]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color8}
+content-foreground = ${colors.color9}
+
+[module/right8]
+type = custom/text
+content = "%{T2}%{T-}"
+content-background = ${colors.color9}
+content-foreground = ${colors.color10}
+
+; normal **************************************************
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+; *****************************
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-background = ${colors.color5}
+
+format-prefix = "  "
+format-prefix-foreground = ${colors.fground-alt}
+format-prefix-font = 3
+
+label-layout = "%layout% "
+
+label-indicator-on = "%icon%  "
+indicator-icon-0 = caps lock;;
+indicator-icon-foreground = ${colors.fground-alt}
+
+; *****************************
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; active workspace
+label-focused = 
+label-focused-background = ${colors.color1}
+label-focused-padding = 1
+
+; inactive workspace
+label-unfocused = 
+label-unfocused-background = ${self.label-focused-background}
+label-unfocused-padding = 1
+
+; urgent workspace
+label-urgent = 
+label-urgent-foreground = ${colors.alert}
+label-urgent-padding = 1
+
+; shoutdown menu
+label-mode = " %mode%"
+label-mode-background = ${self.label-focused-background}
+
+; *****************************
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+
+format-background = ${colors.color3}
+
+format = <ramp> <label>
+label = "%percentage%% "
+
+ramp-0 = 
+ramp-foreground = ${colors.fground-alt}
+ramp-font = 3
+
+; *****************************
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.fground-alt}
+label = "%percentage:2%% "
+format-background = ${colors.color7}
+
+; *****************************
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.fground-alt}
+format-prefix-font = 3
+label = "%percentage_used%% "
+format-background = ${colors.color6}
+
+; *****************************
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.fground-alt}
+format-background = ${colors.color9}
+
+label = "%date% %time% "
+
+; *****************************
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = ${colors.color4}
+label-volume = "%percentage%% "
+
+label-muted = " muted "
+label-muted-foreground = ${colors.fground-alt}
+format-muted-background = ${self.format-volume-background}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.fground-alt}
+ramp-font = 3
+
+; *****************************
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 100
+
+format-background = ${colors.color8}
+
+format-charging = <animation-charging> <label-charging>
+format-charging-background = ${colors.color8}
+label-charging = "%percentage%% "
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-background = ${self.format-charging-background}
+label-discharging = "%percentage%% "
+
+format-full = "%{T3}%{T-} full "
+format-full-background = ${self.format-charging-background}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.fground-alt}
+animation-charging-framerate = 750
+animation-charging-font = 3
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.fground-alt}
+animation-discharging-framerate = 750
+animation-discharging-font = 3
+
+; *****************************
+
+[module/mpris]
+type = custom/script
+interval = 0
+exec = $HOME/.config/polybar/mpris_module
+format-foreground = ${colors.fground}
+format-background = ${colors.color2}
+

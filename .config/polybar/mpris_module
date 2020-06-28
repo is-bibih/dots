@@ -1,0 +1,28 @@
+#!/bin/bash
+
+player_status=$(playerctl status 2> /dev/null)
+
+# colors
+foreground_alt="#ffb5dd"
+
+# symbols
+prev=""
+play=""
+pause=""
+next=""
+not_playing="uwu"
+
+# player to open if there is no media playing
+player="i3-msg 'workspace 8; exec vlc -ZL grive/vivi/musik2/'"
+
+if [ "$player_status" = "Playing" ]; then
+	title_text="$(playerctl metadata --format "{{ lc(artist) }}  {{ lc(title) }}")"
+	full_text="%{F$foreground_alt}%{A1:playerctl previous:}$prev%{A}%{F-} %{A1:playerctl play-pause:}$title_text%{A} %{F$foreground_alt}%{A1:playerctl next:}$next%{A}%{F-}"
+elif [ "$player_status" = "Paused" ]; then
+	title_text="$(playerctl metadata --format "{{ lc(artist) }} - {{ lc(title) }}")"
+	full_text="%{F$foreground_alt}%{A1:playerctl previous:}$prev%{A} %{A1:playerctl play-pause:}$title_text%{A} %{A1:playerctl next:}$next%{A}%{F-}"
+else
+	full_text="%{F$foreground_alt}%{A1:$player:}$not_playing%{A}%{F-}"
+fi
+
+echo " $full_text "
