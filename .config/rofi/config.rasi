@@ -2,7 +2,7 @@ configuration {
 	modi: "window,drun,ssh,combi";
 	combi-modi: "drun";
 	show-icons: true;
-	icon-theme: "Papirus";
+	icon-theme: "Papirus-Dark";
 	font: "Iosevka 10";
 	hide-scrollbar: true;
 	theme: "cute-theme";
