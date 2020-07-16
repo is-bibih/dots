@@ -9,6 +9,7 @@ bison
 blueman
 bluez
 bluez-utils
+cups
 dconf-editor
 discord
 dunst
@@ -16,14 +17,17 @@ efibootmgr
 fakeroot
 feh
 firefox
+flashplugin
 flex
 gcc
+gimp
 git
 grive-git
 grub
 gtk-engine-murrine
 gtk-engines
 gucharmap
+gutenprint
 gvim
 hardcode-tray
 i3-battery-popup-git
@@ -53,6 +57,7 @@ openssh
 pamixer
 papirus-folders-git
 papirus-icon-theme
+papirus-libreoffice-theme
 patch
 picom-ibhagwan-git
 pkgconf
@@ -69,6 +74,7 @@ reflector
 rofi
 rxvt-unicode
 siji-git
+simple-scan
 sudo
 telegram-desktop
 texinfo
