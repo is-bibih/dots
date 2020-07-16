@@ -220,8 +220,8 @@ mode "resize" {
 bindsym $mod+M exec --no-startup-id rofi -show combi
 
 # Autostart applications
-exec_always --no-startup-id "killall picom; picom -b"
 exec_always --no-startup-id "killall polybar; polybar bestbar"
+exec_always --no-startup-id "killall picom; picom -b"
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
