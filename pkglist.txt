@@ -47,6 +47,7 @@ m4
 maim
 make
 man-db
+minecraft-launcher
 nemo
 nerd-fonts-iosevka
 network-manager-applet
@@ -78,6 +79,18 @@ simple-scan
 sudo
 telegram-desktop
 texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 transmission-gtk
 ttf-opensans
 ttf-unifont
