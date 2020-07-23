@@ -20,6 +20,7 @@ firefox
 flashplugin
 flex
 gcc
+geteltorito
 gimp
 git
 grive-git
