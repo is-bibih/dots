@@ -4,6 +4,9 @@
 " syntax highlighting
 :filetype plugin on
 :syntax on
+:set expandtab
+:set shiftwidth=2
+:set softtabstop=2
 
 " filetype specific indents and autoindent
 :filetype indent on
