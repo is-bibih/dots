@@ -4,7 +4,6 @@ alsa-utils
 anki
 apache
 appimagelauncher-git
-atom
 audacity
 autoconf
 automake
@@ -20,6 +19,7 @@ cups
 cups-pdf
 dconf-editor
 desmume
+discord
 dunst
 fakeroot
 feh
@@ -38,6 +38,7 @@ gutenprint
 gvim
 hardcode-fixer-git
 hardcode-tray-git
+hplip
 i3-gaps
 i3blocks
 i3lock-color-git
@@ -88,12 +89,14 @@ polybar-git
 pulseaudio-bluetooth
 pyenv
 python-pip
+python-poetry
 qt5-styleplugins
 redshift
 reflector
 rofi
 rxvt-unicode
 siji-git
+simple-scan
 subversion
 sudo
 telegram-desktop

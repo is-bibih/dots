@@ -32,6 +32,8 @@ alias ls='ls --color=auto'
 # config alias for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# add local binaries to path
+export PATH=/home/vivi/.local/bin:$PATH
 
 #------------------------------
 # Window title

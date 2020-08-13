@@ -1,3 +1,5 @@
+set nocompatible
+
 " set clipboard buffer to x primary buffer
 :set clipboard=unnamedplus
 
