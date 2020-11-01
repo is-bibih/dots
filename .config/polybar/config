@@ -36,11 +36,12 @@ foreground = ${colors.fg}
 font-0 = iosevka nerd font:style=regular:size=8;3
 font-1 = iosevka nerd font:style=regular:size=13;2
 font-2 = siji:pixelsize=10;3
-font-3 = unifont:style=regular:size=8
+font-3 = ipagothic:style=regular:size=8;3
+font-4 = unifont:style=regular:size=8
 
 modules-left = i3 mpris
 modules-center = xwindow
-modules-right = backlight pulseaudio battery1 battery2 date
+modules-right = backlight pulseaudio battery1 battery2 date xkeyboard
 separator = " "
 
 tray-position = right
