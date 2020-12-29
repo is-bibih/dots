@@ -35,6 +35,13 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
 
+# set pyenv root
+export PYENV_ROOT="$HOME/.pyenv"
+# autoninit pyenv
+eval "$(pyenv init -)"
+# make pipenv respect pyenv
+export PIPENV_PYTHON=$PYENV_ROOT/shims/python
+
 #------------------------------
 # Window title
 #------------------------------
