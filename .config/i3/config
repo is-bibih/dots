@@ -217,7 +217,7 @@ mode "resize" {
 }
 
 # rofi keybinding
-bindsym $mod+M exec --no-startup-id rofi -show combi
+bindsym $mod+M exec --no-startup-id rofi -show drun
 
 # autostart applications
 exec_always --no-startup-id "killall polybar; polybar bestbar"
