@@ -31,6 +31,16 @@ Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
     let g:vimtex_view_method='zathura'
     let g:vimtex_quickfix_mode=0
+    let g:vimtex_compiler_latexmk = {
+	\ 'options' : [
+    	\   '-pdf',
+    	\   '-shell-escape',
+    	\   '-verbose',
+    	\   '-file-line-error',
+    	\   '-synctex=1',
+    	\   '-interaction=nonstopmode',
+    	\ ],
+    	\}
 
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
@@ -53,11 +63,9 @@ call plug#end()
 syntax enable
 colorscheme challenger_deep
 
-" lightline theme
-"let g:lightline = { 'colorscheme': 'challenger_deep'}
+" **** custom statusline ****
 set laststatus=2
 
-" **** custom statusline ****
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
