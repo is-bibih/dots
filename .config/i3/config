@@ -221,7 +221,7 @@ bindsym $mod+M exec --no-startup-id rofi -show drun
 
 # autostart applications
 exec_always --no-startup-id "killall polybar; polybar bestbar"
-exec_always --no-startup-id "killall picom; picom -b"
+exec_always --no-startup-id "killall picom; picom -b --experimental-backends"
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
