@@ -52,7 +52,11 @@ urxvt*background:   [70]#1e1c31
 urxvt*blurRadius:   5
 
 ! **** font ****
-urxvt.font:	xft:Iosevka Nerd Font Mono:pixelsize=12
+urxvt.font:	xft:Iosevka Nerd Font Mono:pixelsize=12,xft:M+ 1m:pixelsize=12
+
+! **** input with ibus ****
+urxvt.inputMethod:  ibus
+urxvt.preeditType:  OverTheSpot
 
 ! **** delet scrollbar and make it prettier ****
 urxvt*scrollBar:                  false
