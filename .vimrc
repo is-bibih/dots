@@ -55,8 +55,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
-Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git'
-
 call plug#end()
 
 " colors
@@ -117,7 +115,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " nerdtree when opening a directory
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
-" nerdtree keybinging
+" nerdtree keybinding
 map <C-n> :NERDTreeToggle<CR>
 
 " close vim when only nerdtree is open
@@ -126,6 +124,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 """"""""" coc.nvim config """"""""""""""""
+" install extensions
+
+let g:coc_global_extensions = ['coc-python']
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
