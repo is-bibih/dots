@@ -127,33 +127,10 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 0
-for_window [class="Calamares"] floating enable border normal
-for_window [class="Clipgrab"] floating enable
-for_window [title="File Transfer*"] floating enable
-for_window [class="Galculator"] floating enable border pixel 0
-for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro-hello"] floating enable
-for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Oblogout"] fullscreen enable
-for_window [class="octopi"] floating enable
-for_window [title="About Pale Moon"] floating enable
-for_window [class="Pamac-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Skype"] floating enable border normal
-for_window [class="Thus"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
 
 # resize and center dialog windows 
 for_window [window_type="dialog"] resize set 640 480 move position center
@@ -163,7 +140,7 @@ floating_minimum_size 75 x 50
 floating_maximum_size -1 x -1
 
 # fix giant windows
-for_window [title="Open File"] resize set 750 520
+for_window [title="Open File"] resize set 640 480 move position center
 
 # switch to workspace with urgent window automatically
 #for_window [urgent=latest] focus
@@ -181,8 +158,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, (s)uspend, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3lock-fancy -- maim, mode "default"
-    bindsym s exec --no-startup-id "i3lock-fancy -- maim; systemctl suspend", mode "default"
+    bindsym l exec --no-startup-id betterlockscreen -l blur, mode "default"
+    bindsym s exec --no-startup-id betterlockscreen -s blur, mode "default"
     bindsym e exec i3 exit, mode "default"
     bindsym r exec systemctl reboot, mode "default"
     bindsym Shift+s exec systemctl poweroff, mode "default"
@@ -225,7 +202,8 @@ exec_always --no-startup-id "killall picom; picom -b --experimental-backends"
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
-exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/.wallpapers/*
+#exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/.wallpapers/*
+exec --no-startup-id $HOME/scripts/bg-lock.sh
 exec --no-startup-id mpris-proxy
 exec --no-startup-id i3-battery-popup -L 12 -m "low battery >:0" -t 1m -i /usr/share/icons/Papirus-Dark/16x16/panel/battery-low.svg -n
 exec --no-startup-id ibus-daemon -drx
