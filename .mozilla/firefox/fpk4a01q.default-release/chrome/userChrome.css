@@ -1,0 +1,128 @@
+
+#navigator-toolbox {
+  -moz-appearance: none;
+  background-color: transparent !important;
+  border-top: none;
+}
+.browser-toolbar:not(.titlebar-color),
+#tabbrowser-tabs:not([movingtab])
+  > .tabbrowser-arrowscrollbox
+  > .tabbrowser-tab
+  > .tab-stack
+  > .tab-background[multiselected='true']:-moz-lwtheme,
+#tabbrowser-tabs:not([movingtab])
+  > .tabbrowser-arrowscrollbox
+  > .tabbrowser-tab
+  > .tab-stack
+  > .tab-background[selected='true']:-moz-lwtheme,
+* {
+  --tab-line-color: var(--color1);
+  --tab-min-width: 76px;
+}
+#urlbar, #navigator-toolbox #searchbar {border: none !important;}
+
+#urlbar:not(.megabar):not([focused='true']):-moz-lwtheme,
+#urlbar.megabar:not([focused='true']):-moz-lwtheme > #urlbar-background,
+#navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme,
+#navigator-toolbox {
+  border: none !important;
+}
+#urlbar:not(.megabar):-moz-lwtheme,
+#urlbar.megabar:-moz-lwtheme > #urlbar-background,
+#navigator-toolbox #searchbar:-moz-lwtheme {
+  background-color: var(--background) !important;
+}
+#navigator-toolbox {
+  --tabs-border-color: var(--background) !important;
+}
+
+toolbox {
+  z-index: 10;
+  margin-top: 0px !important;
+  margin-bottom: -30px !important;
+  height: 0 !important;
+  pointer-events: none;
+}
+vbox {pointer-events: all;}
+
+
+#nav-bar {
+  opacity: 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+  transition: transform, ease-in-out 0.2s, opacity 0.2s ease-in-out !important;
+}
+/* All the states in which the URL bar is visible */
+vbox:hover ~ #nav-bar, toolbox:focus-within > #nav-bar, #nav-bar:hover, #mainPopupSet:hover ~ box #nav-bar, #mainPopupSet:focus-within ~ box #nav-bar {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+window, #main-window, #toolbar-menubar, #TabsToolbar, #PersonalToolbar, #sidebar-box{
+
+  background-color: rgba(41,47,52,0.4) !important;
+  -moz-appearance: none !important;
+  background-image: none !important;
+
+}
+
+window, #nav-bar{
+
+  background-color: rgba(33,37,41,0.5) !important;
+  -moz-appearance: none !important;
+  background-image: none !important;
+
+}
+
+.tab-background[selected="true"] {
+
+  background: rgba(33,37,41,0.3) !important;
+  -moz-appearance: none !important;
+  background-image: none !important;
+
+}
+
+#navigator-toolbox {
+  --tabs-border-color: rgba(41,47,52,0.4) !important;
+}
+
+/* Set container tab colour */
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background[selected="true"] {
+    background-color: var(--identity-tab-color, transparent) !important;
+    border-top: none !important;
+    opacity: 0.2 !important;
+}
+
+/* Hide container bottom line */
+.tab-bottom-line {
+    display: none !important;
+}
+
+/* Set container tab close button colour */
+.tabbrowser-tab[usercontextid].tabbrowser-tab:not([pinned]) .tab-close-button { 
+    color: #FFFFFF !important;
+}
+
+/* Set inactive container tabs text color. */
+ .tabbrowser-tab[usercontextid]:not([selected]) .tab-content{
+    color: var(--identity-tab-color, transparent) !important;
+}
+
+/* Set active container tab text color. */
+.tabbrowser-tab[usercontextid] .tab-content{
+    color: var(--identity-tab-color, transparent) !important;
+}
+
+/* Set private tab colour */
+#main-window[privatebrowsingmode="temporary"] .tabbrowser-tab .tab-background[selected="true"] {
+    background-color:  #8D20AE !important;
+    opacity: 0.2 !important;
+}
+
+/* no separators between tabs */
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+  border: none !important;
+}
+
