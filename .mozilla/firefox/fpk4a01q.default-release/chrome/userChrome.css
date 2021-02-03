@@ -91,7 +91,7 @@ window, #nav-bar{
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background[selected="true"] {
     background-color: var(--identity-tab-color, transparent) !important;
     border-top: none !important;
-    opacity: 0.2 !important;
+    opacity: 0.3 !important;
 }
 
 /* Hide container bottom line */
@@ -125,4 +125,13 @@ window, #nav-bar{
 .tabbrowser-tab::after {
   border: none !important;
 }
+
+/* tabs all roundy */
+.tab-background,
+.tab-loading-burst {
+border: none !important;
+border-radius: 7px !important;
+}
+/* get rid of lines on selected/hovered tabs */
+.tab-line { display: none !important; }
 

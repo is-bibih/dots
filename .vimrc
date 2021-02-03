@@ -126,7 +126,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 """"""""" coc.nvim config """"""""""""""""
 " install extensions
 
-let g:coc_global_extensions = ['coc-python']
+let g:coc_global_extensions = ['coc-marketplace', 'coc-pyright', 'coc-rome']
 
 " TextEdit might fail if hidden is not set.
 set hidden
