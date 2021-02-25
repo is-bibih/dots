@@ -32,6 +32,9 @@ alias ls='ls --color=auto'
 # config alias for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# remove latex compilation files
+alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
+
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
 

@@ -201,8 +201,8 @@ exec_always --no-startup-id "killall polybar; polybar bestbar"
 exec_always --no-startup-id "killall picom; picom -b --experimental-backends"
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk
-#exec --no-startup-id feh --bg-fill --randomize --no-fehbg ~/.wallpapers/*
 exec --no-startup-id $HOME/scripts/bg-lock.sh
 exec --no-startup-id mpris-proxy
 exec --no-startup-id i3-battery-popup -L 12 -m "low battery >:0" -t 1m -i /usr/share/icons/Papirus-Dark/16x16/panel/battery-low.svg -n
