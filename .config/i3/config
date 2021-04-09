@@ -145,7 +145,7 @@ for_window [title="Open File"] resize set 640 480 move position center
 # switch to workspace with urgent window automatically
 #for_window [urgent=latest] focus
 
-# reload the configuration file
+# r -ueload the configuration file
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -281,5 +281,5 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # screenshot keybindings
-bindsym Shift+Print exec maim -s | xclip -selection clipboard -t image/png
+bindsym Shift+Print exec maim -s -u | xclip -selection clipboard -t image/png
 bindsym Print exec maim | xclip -selection clipboard -t image/png
