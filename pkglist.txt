@@ -37,7 +37,7 @@ gutenprint
 gvim
 hardcode-fixer-git
 hardcode-tray-git
-hunspell-en_US
+hunspell-en_us
 hunspell-es_mx
 i3-battery-popup-git
 i3-gaps
@@ -81,6 +81,7 @@ papirus-folders-git
 papirus-icon-theme
 papirus-libreoffice-theme
 patch
+pavucontrol
 pdftk
 picom-git
 pkgconf
