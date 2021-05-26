@@ -282,4 +282,4 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # screenshot keybindings
 bindsym Shift+Print exec maim -s -u | xclip -selection clipboard -t image/png
-bindsym Print exec maim | xclip -selection clipboard -t image/png
+bindsym Print exec maim -u | xclip -selection clipboard -t image/png
