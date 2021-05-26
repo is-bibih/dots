@@ -1,6 +1,7 @@
 acpi
 acpilight
 alsa-utils
+android-tools
 anki
 autoconf
 automake
@@ -25,9 +26,11 @@ feh
 firefox
 flashplugin
 flex
+flowblade
 gcc
 gimp
 git
+go
 grive-git
 grub
 gtk-engine-murrine
@@ -99,6 +102,7 @@ reflector
 remmina
 remmina-plugin-rdesktop
 rofi
+rust
 rxvt-unicode
 siji-git
 simple-scan
@@ -186,6 +190,7 @@ xorg-xwud
 xournalpp
 yarn
 yay
+youtube-dl
 zathura
 zathura-cb
 zathura-djvu
