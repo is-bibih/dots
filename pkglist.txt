@@ -66,6 +66,11 @@ maim
 make
 man-db
 man-pages
+mopidy
+mopidy-iris
+mopidy-mpd
+mopidy-spotify
+ncmpcpp
 ncspot
 nemo
 nemo-fileroller
@@ -107,6 +112,7 @@ rxvt-unicode
 siji-git
 simple-scan
 sudo
+teams
 telegram-desktop
 texinfo
 texlive-bibtexextra
