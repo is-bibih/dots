@@ -35,6 +35,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # remove latex compilation files
 alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 
+# grive id and secret
+. ~/.grivealias
+
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
 
