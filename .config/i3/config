@@ -128,8 +128,9 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open specific applications in floating mode
 for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
+for_window [class="Lxappearance"] floating enable
+for_window [class="Simple-scan"] floating enable
+for_window [class="matplotlib"] floating enable
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 
 # resize and center dialog windows 
