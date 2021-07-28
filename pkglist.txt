@@ -1,6 +1,7 @@
 acpi
 acpilight
 alsa-utils
+android-sdk-platform-tools
 android-tools
 anki
 autoconf
@@ -21,6 +22,7 @@ dconf-editor
 dhcpcd
 dunst
 efibootmgr
+epson-inkjet-printer-escpr
 fakeroot
 feh
 firefox
@@ -50,6 +52,7 @@ inotify-tools
 intel-ucode
 jquery
 jupyter-notebook
+klatexformula
 krita
 libreoffice-extension-languagetool
 libreoffice-fresh
@@ -100,8 +103,10 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pyenv
 python-pip
+python-pyfftw
 python2
 qt5-styleplugins
+qtox
 redshift
 reflector
 remmina
@@ -113,7 +118,7 @@ siji-git
 simple-scan
 sudo
 teams
-telegram-desktop
+telegram-desktop-bin
 texinfo
 texlive-bibtexextra
 texlive-core
