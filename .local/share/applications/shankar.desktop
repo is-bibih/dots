@@ -2,7 +2,7 @@
 Type=Application
 Name=shankar
 Comment=Principles of Quantum Mechanics (Shankar)
-Exec=/usr/bin/zathura "~/grive/vivi/estudiar/R. Shankar - Principles of quantum mechanics-Plenum Press (1994).djvu"
+Exec=/usr/bin/zathura "~/grive/vivi/libros/R. Shankar - Principles of quantum mechanics-Plenum Press (1994).djvu"
 Icon=/usr/share/icons/Papirus-Dark/128x128/apps/accessories-ebook-reader.svg
 Terminal=false
 Categories=Physics
