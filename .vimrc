@@ -1,26 +1,48 @@
 set nocompatible
 
+" --------- editing ---------
+
 " set clipboard buffer to x primary buffer
-:set clipboard=unnamedplus
+set clipboard=unnamedplus
+
+" incremental search
+set incsearch
+
+" filetype specific indents and autoindent
+filetype indent on
+set autoindent
+
+" reload buffers on file change
+set autoread
+
+" set amount of lines to keep above and below cursor
+set scrolloff=50
+
+" better command completion
+set wildmenu
+
+" --------- appearance ---------
 
 " syntax highlighting
-:filetype plugin on
-:syntax on
-:set expandtab
-:set shiftwidth=2
-:set softtabstop=2
+filetype plugin on
+syntax on
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " disable showing active mode
 set noshowmode
 " disable displaying file name etc
 set shortmess+=F
 
-" filetype specific indents and autoindent
-:filetype indent on
-:set autoindent
-
 " line number column
-:set number
+set number
+
+" colors
+syntax enable
+colorscheme shades-of-pastel
+
+" --------- plugins ---------
 
 " fetch plugins if not installed
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -29,7 +51,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'lervag/vimtex'
@@ -40,10 +61,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 
 call plug#end()
-
-" colors
-syntax enable
-colorscheme shades-of-pastel
 
 " install coc extensions
 let g:coc_global_extensions = ['coc-marketplace', 'coc-pyright', 'coc-rome', 'coc-vimtex', 'coc-texlab', 'coc-snippets']
