@@ -10,6 +10,11 @@ set nocompatible
 :set shiftwidth=2
 :set softtabstop=2
 
+" disable showing active mode
+set noshowmode
+" disable displaying file name etc
+set shortmess+=F
+
 " filetype specific indents and autoindent
 :filetype indent on
 :set autoindent
@@ -32,14 +37,13 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'honza/vim-snippets'
 
 call plug#end()
 
 " colors
 syntax enable
-colorscheme challenger_deep
+colorscheme shades-of-pastel
 
 " install coc extensions
 let g:coc_global_extensions = ['coc-marketplace', 'coc-pyright', 'coc-rome', 'coc-vimtex', 'coc-texlab', 'coc-snippets']
