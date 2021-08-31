@@ -20,11 +20,26 @@ setopt autocd beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-# prompt theme system
-autoload -Uz promptinit
-promptinit
-# set prompt theme
-prompt fire yellow red magenta foreground yellow yellow
+# set prompt
+prompt='%F{#ffa1ca}%n%F{#ffe9aa} ♥ %F{#b1a1ff}%2~ %F{#ffe9aa}%#%f '
+# git status on right
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{#b1a1ff}%b ▶ %r%f'
+zstyle ':vcs_info:*' enable git
+
+# vim instead of vi
+alias vi='vim'
+# vim as editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# default terminal
+export TERMINAL=urxvt
+alias xterm='urxvt'
 
 # colored ls
 alias ls='ls --color=auto'
@@ -37,6 +52,9 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 
 # grive id and secret
 . ~/.grivealias
+
+# load nnn config
+. ~/.nnnconfig
 
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
