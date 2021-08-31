@@ -1,0 +1,28 @@
+#!/usr/bin/env/ bash 
+
+# export environment variables for nnn
+
+# set bookmarks
+export NNN_BMS="\
+i:$HOME/grive/ifi5;\
+b:$HOME/grive/ifi5/1-b-modnum;\
+c:$HOME/grive/ifi5/1-cuantica;\
+j:$HOME/grive/ifi5/jp;\
+v:$HOME/grive/vivi;\
+d:$HOME/downloads;\
+a:$HOME/aaaaa\
+"
+
+# load plugins
+export NNN_PLUG="\
+t:preview-tabbed;\
+p:preview-tui;\
+n:nuke;\
+"
+
+# set previewer
+export NNN_FIFO=/tmp/nnn.fifo
+
+# enable trash (instead of just deleting)
+export NNN_TRASH=1
+
