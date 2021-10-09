@@ -16,7 +16,7 @@ set autoindent
 set autoread
 
 " set amount of lines to keep above and below cursor
-set scrolloff=50
+set scrolloff=10
 
 " better command completion
 set wildmenu
@@ -41,6 +41,10 @@ set number
 " colors
 syntax enable
 colorscheme shades-of-pastel
+" fix artifacts?
+let &t_ut=''
+" fix statusline artifacts
+set t_RV=
 
 " --------- plugins ---------
 
@@ -54,7 +58,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'lervag/vimtex'
-Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
