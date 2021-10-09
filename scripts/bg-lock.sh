@@ -8,4 +8,4 @@ BG_FILE=$(find $BG_DIR -type f | shuf -n 1)
 feh --bg-fill --no-fehbg $BG_FILE
 
 # cache image for lockscreen
-betterlockscreen -u $BG_FILE -b 1
+betterlockscreen -u $BG_FILE
