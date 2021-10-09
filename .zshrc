@@ -54,7 +54,7 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 . ~/.grivealias
 
 # load nnn config
-. ~/.nnnconfig
+. ~/config/nnn/.nnnconfig
 
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH

@@ -5,8 +5,8 @@
 # set bookmarks
 export NNN_BMS="\
 i:$HOME/grive/ifi5;\
-b:$HOME/grive/ifi5/1-b-modnum;\
-c:$HOME/grive/ifi5/1-cuantica;\
+b:$HOME/grive/ifi5/2-b-optica;\
+c:$HOME/grive/ifi5/2-cuantica;\
 j:$HOME/grive/ifi5/jp;\
 v:$HOME/grive/vivi;\
 d:$HOME/downloads;\
