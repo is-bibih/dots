@@ -58,6 +58,7 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
+export PATH=/home/vivi/.cargo/bin:$PATH
 
 # set pyenv root
 export PYENV_ROOT="$HOME/.pyenv"
