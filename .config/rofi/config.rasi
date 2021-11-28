@@ -3,7 +3,8 @@ configuration {
 	show-icons: true;
 	icon-theme: "Papirus-Dark";
 	font: "Iosevka 10";
-	theme: "cute-theme";
 	//hide-scrollbar: true;
 	//lines: 5;
 }
+
+@theme "cute-theme"
