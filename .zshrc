@@ -49,6 +49,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # remove latex compilation files
 alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
+# add folder for custom classes/packages
+export TEXINPUTS=:$HOME/.latex-packages//
 
 # grive id and secret
 . ~/.grivealias
