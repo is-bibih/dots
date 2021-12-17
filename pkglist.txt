@@ -29,7 +29,6 @@ efibootmgr
 epson-inkjet-printer-escpr
 fakeroot
 feh
-firefox
 flashplugin
 flex
 flowblade
@@ -80,7 +79,6 @@ maim
 make
 man-db
 man-pages
-mathematica
 mopidy
 mopidy-iris
 mopidy-mpd
@@ -106,6 +104,7 @@ pamixer
 papirus-folders-git
 papirus-icon-theme
 papirus-libreoffice-theme
+pass
 patch
 pavucontrol
 pdftk
@@ -128,10 +127,12 @@ reflector
 remmina
 remmina-plugin-rdesktop
 rofi
+root
 rust
 rxvt-unicode
 siji-git
 simple-scan
+st
 steam
 sudo
 sxiv
